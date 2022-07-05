@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+
+
+<h1>Type anything slowly</h1>
+
+<textarea id="text" onkeypress="check(event)" cols="50" rows="4"></textarea>
+
+<script>
+
+    let mess = 'RIKKEI ACADEMY - WHERE THE DREAM BEGINS';
+    let arr = [];
+    let i = 0;
+
+    function check(event) {
+        event.preventDefault();
+        arr.push(mess[i]);
+        document.getElementById('text').value = arr.join('');
+        i++;
+    }
+
+</script>
+
+</body>
+</html>
