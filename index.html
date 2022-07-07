@@ -23,6 +23,17 @@
         arr.push(mess[i]);
         document.getElementById('text').value = arr.join('');
         i++;
+
+        console.log(arr.length);
+        console.log(mess.length);
+        if(arr.length > mess.length){
+            arr = [];
+            document.getElementById('text').value = '';
+            i = 0;
+            arr.push(mess[i]);
+            document.getElementById('text').value = arr.join('');
+            i++;
+        }
     }
 
 </script>
